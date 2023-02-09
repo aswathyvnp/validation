@@ -1,0 +1,28 @@
+/* Author: Aswathy */
+body {
+	background-image: url("https://images.hindustantimes.com/img/2023/01/10/1600x900/While-the-past-year-was-about-revenge-and-revival-_1673351689949.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.form {
+	width: 35%;
+	border: solid 1px;
+	background-color: rgba(230, 171, 238, 0.685);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form_main {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 972px) and (min-width: 234px) {
+	.form {
+		width: 100%;
+	}
+}

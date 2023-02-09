@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container-fluid p-0 form_main">
+			<div class="row form">
+				<div class="h2">Travel Reservation form</div>
+				<div class="text-danger">* denotes mandatory</div>
+				<strong></strong>
+				<span class="text-danger" id="alrt"></span>
+				<form class="row gap-2" action="">
+					<div class="row">
+						<div class="col-4">
+							<label for="name">Full name*:</label>
+						</div>
+						<div class="col-8">
+							<input
+								type="text"
+								name="name"
+								id="cstname"
+								placeholder="FiratName LastName"
+							/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label for="mail">Email address*:</label>
+						</div>
+						<div class="col-8">
+							<input
+								type="email"
+								name="mail"
+								id="cstmail"
+								placeholder="@email_id"
+							/><br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label for="numofp">Number of Person*:</label>
+						</div>
+						<div class="col-8">
+							<input
+								type="text"
+								name="name"
+								id="numofp"
+								placeholder="Enter number"
+							/><br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label for="package">Select Tour package*:</label>
+						</div>
+						<div class="col-8">
+							<select name="package" id="pkg">
+								<br />
+								<option id="0" value="select">select</option>
+								<option id="1" value="Goa">Goa</option>
+								<option id="2" value="Ootty">Ootty</option>
+								<option id="2" value="UK">UK</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label for="dt">Arrival Date</label><br />
+						</div>
+						<div class="col-8">
+							<input type="date" name="date" id="dt" /><br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label for="">What would you want to avail*:</label>
+						</div>
+						<div class="col-8">
+							<label for="Boarding">Boarding</label>
+							<input
+								type="checkbox"
+								name="Boarding"
+								id="check1"
+							/><br />
+							<label for="Fooding">Fooding</label>
+							<input
+								type="checkbox"
+								name="Fooding"
+								id="check2"
+							/><br />
+							<label for="Sight Seeing">Sight Seeing</label>
+							<input
+								type="checkbox"
+								name="Sight Seeing"
+								id="check3"
+							/>
+						</div>
+					</div>
+					<div class="row">
+						<p id="checkshow"></p>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label for="">Discount Coupon Code</label><br />
+						</div>
+						<div class="col-8">
+							<input type="number" name="" id="dscnt" /><br />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<label for="">Terms and conditions</label><br />
+						</div>
+						<div class="col-8">
+							<input type="radio" name="choice" id="agree" />
+							<label for="agree">I agree</label>
+							<input type="radio" name="choice" id="not agree" />
+							<label for="agree">I agree</label><br />
+						</div>
+					</div>
+
+					<input
+						class="btn btn-success"
+						type="button"
+						name=""
+						id="go"
+						value="Check"
+						onclick="validat()"
+					/>
+					<input
+						class="btn btn-primary"
+						type="submit"
+						value="Submit"
+						onclick="validat()"
+						onsubmit="alrt()"
+					/>
+				</form>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
