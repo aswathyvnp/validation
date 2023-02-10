@@ -6,51 +6,56 @@ function validat() {
 	let nump = document.getElementById("numofp").value;
 	let dt = document.getElementById("dt").value;
 	let ddl = document.getElementById("pkg");
-	let dsnt = document.getElementById("numofp").value;
-
+	let ds = document.getElementById("dst").value;
 	let dlText = ddl.options[ddl.selectedIndex].text;
 	if (nme == "") {
-		document.getElementById("alrt").innerHTML =
+		document.getElementById("name_span").innerHTML =
 			"Oh no......!Name Field is empty";
 		return false;
 	} else if (!nmex.test(nme)) {
-		document.getElementById("alrt").innerHTML = "Please enter valid Name";
+		("Please enter valid Name");
 		return false;
 	} else if (ml == "") {
-		document.getElementById("alrt").innerHTML = "Please enter a mail id";
+		document.getElementById("mail_span").innerHTML =
+			"Please enter a mail id";
 		return false;
 	} else if (!mail.test(ml)) {
-		document.getElementById("alrt").innerHTML = "Enter valide mail id";
-		return false;
-	} else if (isNaN(nump)) {
-		document.getElementById("alrt").innerHTML =
-			"Only numbers are allowed in this field";
+		document.getElementById("mail_span").innerHTML = "Enter valid mail id";
 		return false;
 	} else if (nump == "") {
-		document.getElementById("alrt").innerHTML =
+		document.getElementById("num_span").innerHTML =
 			"Please enter number of person";
 		return false;
+	} else if (isNaN(nump)) {
+		document.getElementById("num_span").innerHTML =
+			"Only numbers are allowed in this field";
+		return false;
 	} else if (dlText == "select") {
-		document.getElementById("alrt").innerHTML = "Please choose package";
+		document.getElementById("dplist_span").innerHTML =
+			"Please choose package";
 		return false;
 	} else if (dt == "") {
-		document.getElementById("alrt").innerHTML = "Please choose date";
+		document.getElementById("date_span").innerHTML = "Please choose date";
 		return false;
 	} else if (
 		document.getElementById("check1").checked == false &&
 		document.getElementById("check2").checked == false &&
 		document.getElementById("check3").checked == false
 	) {
-		document.getElementById("alrt").innerHTML = "Select the checkbox";
+		document.getElementById("check_span").innerHTML = "Select the checkbox";
 		return false;
-	} else if (dsnt == "") {
-		document.getElementById("alrt").innerHTML = "Enter the Discount";
+	} else if (ds == "") {
+		document.getElementById("ds_span").innerHTML = "Enter the Discount";
+		return false;
+	} else if (isNaN(ds)) {
+		document.getElementById("ds_span").innerHTML =
+			"Only numbers are allowed in this field";
 		return false;
 	} else if (
 		document.getElementById("agree").checked == false &&
 		document.getElementById("notagree").checked == false
 	) {
-		document.getElementById("alrt").innerHTML = "Choose Agree";
+		document.getElementById("agre_span").innerHTML = "Choose Agree";
 		return false;
 	} else {
 		document.getElementById("alrt").innerHTML = "All set ";
