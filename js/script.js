@@ -47,17 +47,14 @@ function validat() {
 		document.getElementById("alrt").innerHTML = "Enter the Discount";
 		return false;
 	} else if (
-		document.getElementById("agree").checked == false ||
+		document.getElementById("agree").checked == false &&
 		document.getElementById("notagree").checked == false
 	) {
 		document.getElementById("alrt").innerHTML = "Choose Agree";
 		return false;
 	} else {
 		document.getElementById("alrt").innerHTML = "All set ";
+		alert("Successfully Reserved");
 		return true;
 	}
-}
-
-function alrt() {
-	alert("Successfully Reserved");
 }
