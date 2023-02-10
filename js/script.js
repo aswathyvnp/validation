@@ -1,6 +1,6 @@
 function validat() {
 	let nme = document.getElementById("cstname").value;
-	let nmex = /^[a-zA-Z]{2,15}$/;
+	let nmex = /^[a-z A-Z]{2,15}$/;
 	let ml = document.getElementById("cstmail").value;
 	let mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	let nump = document.getElementById("numofp").value;

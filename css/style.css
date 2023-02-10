@@ -8,7 +8,7 @@ body {
 .form {
 	width: 35%;
 	border: solid 1px;
-	background-color: rgba(230, 171, 238, 0.685);
+	background-color: rgb(238 202 171 / 69%);
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
